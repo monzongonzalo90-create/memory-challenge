@@ -1,0 +1,392 @@
+
+/* ==========================================
+   MEMORY CHALLENGE
+   Estilos de la interfaz principal
+   ========================================== */
+
+/* CONTENEDOR PRINCIPAL */
+.app-shell {
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 50% 0%, #31205f 0%, transparent 45%),
+    #111827;
+}
+
+/* ENCABEZADO */
+.topbar {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 25px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, #7c3aed, #2563eb);
+  font-size: 25px;
+}
+
+.brand-name {
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.brand-subtitle {
+  color: #9ca3af;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+/* INDICADOR DE ESTADO */
+.status {
+  padding: 9px 16px;
+  border: 1px solid #374151;
+  border-radius: 30px;
+  color: #d1d5db;
+  font-size: 13px;
+  background: rgba(31, 41, 55, 0.8);
+}
+
+/* CONTENIDO PRINCIPAL */
+.hero-section {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 65px 25px 45px;
+  text-align: center;
+}
+
+.hero-label {
+  display: inline-block;
+  padding: 8px 16px;
+  border: 1px solid rgba(167, 139, 250, 0.35);
+  border-radius: 30px;
+  color: #c4b5fd;
+  background: rgba(124, 58, 237, 0.15);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.hero-title {
+  margin: 25px 0 15px;
+  font-size: clamp(38px, 7vw, 68px);
+  font-weight: 900;
+  letter-spacing: -2px;
+  line-height: 1.1;
+}
+
+.hero-title span {
+  color: #a78bfa;
+}
+
+.hero-description {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #9ca3af;
+  font-size: 17px;
+}
+
+/* TARJETAS DE ACCESO */
+.action-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  max-width: 850px;
+  margin: 55px auto 0;
+  text-align: left;
+}
+
+.action-card {
+  padding: 30px;
+  border: 1px solid #374151;
+  border-radius: 20px;
+  background: rgba(31, 41, 55, 0.85);
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.action-card:hover {
+  transform: translateY(-5px);
+  border-color: #8b5cf6;
+}
+
+.card-icon {
+  width: 55px;
+  height: 55px;
+  display: grid;
+  place-items: center;
+  border-radius: 15px;
+  background: rgba(124, 58, 237, 0.2);
+  font-size: 28px;
+}
+
+.action-card h2 {
+  margin: 22px 0 10px;
+  color: #f9fafb;
+  font-size: 23px;
+}
+
+.action-card p {
+  min-height: 50px;
+  color: #9ca3af;
+  font-size: 14px;
+}
+
+/* BOTONES */
+.btn {
+  width: 100%;
+  margin-top: 23px;
+  padding: 14px 18px;
+  border: none;
+  border-radius: 11px;
+  color: white;
+  background: linear-gradient(135deg, #7c3aed, #2563eb);
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.btn:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: #374151;
+}
+
+/* CAMPO PARA CÓDIGO */
+.join-input {
+  width: 100%;
+  margin-top: 20px;
+  padding: 14px;
+  border: 1px solid #4b5563;
+  border-radius: 10px;
+  outline: none;
+  color: white;
+  background: #111827;
+  text-align: center;
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.join-input:focus {
+  border-color: #8b5cf6;
+}
+
+/* CARACTERÍSTICAS */
+.features {
+  max-width: 850px;
+  margin: 65px auto 0;
+  padding: 25px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  border-top: 1px solid #374151;
+}
+
+.feature {
+  text-align: center;
+}
+
+.feature strong {
+  display: block;
+  margin-bottom: 7px;
+  color: #c4b5fd;
+  font-size: 19px;
+}
+
+.feature span {
+  color: #9ca3af;
+  font-size: 13px;
+}
+
+/* PIE DE PÁGINA */
+.footer {
+  padding: 25px;
+  color: #6b7280;
+  text-align: center;
+  font-size: 12px;
+}
+
+/* ADAPTACIÓN A CELULARES */
+@media (max-width: 650px) {
+  .topbar {
+    padding: 18px;
+  }
+
+  .brand-name {
+    font-size: 16px;
+  }
+
+  .hero-section {
+    padding: 45px 18px 30px;
+  }
+
+  .hero-description {
+    font-size: 15px;
+  }
+
+  .action-grid {
+    grid-template-columns: 1fr;
+    margin-top: 35px;
+  }
+
+  .action-card {
+    padding: 24px;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+}
+
+
+/* ==========================================
+   FORMULARIOS Y NAVEGACIÓN
+   MEMORY CHALLENGE
+   ========================================== */
+
+.form-section {
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 35px 25px 60px;
+}
+
+.back-button {
+  display: block;
+  margin-bottom: 25px;
+  padding: 10px 0;
+  border: none;
+  color: #c4b5fd;
+  background: transparent;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  color: #ffffff;
+}
+
+.form-card {
+  width: 100%;
+  max-width: 550px;
+  margin: 0 auto;
+  padding: 35px;
+  border: 1px solid #374151;
+  border-radius: 20px;
+  background: rgba(31, 41, 55, 0.95);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+.form-card h1 {
+  margin: 20px 0 10px;
+  color: #f9fafb;
+  font-size: 30px;
+}
+
+.form-card > p {
+  margin-bottom: 25px;
+  color: #9ca3af;
+  font-size: 14px;
+}
+
+.form-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-card label {
+  margin-top: 10px;
+  color: #e5e7eb;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form-card input,
+.form-card select {
+  width: 100%;
+  min-height: 48px;
+  padding: 12px 14px;
+  border: 1px solid #4b5563;
+  border-radius: 10px;
+  outline: none;
+  color: #f9fafb;
+  background: #111827;
+}
+
+.form-card input:focus,
+.form-card select:focus {
+  border-color: #8b5cf6;
+  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.15);
+}
+
+.form-card select {
+  cursor: pointer;
+}
+
+.game-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 15px 0 5px;
+  padding: 17px;
+  border: 1px solid #374151;
+  border-radius: 12px;
+  color: #d1d5db;
+  background: #111827;
+  font-size: 13px;
+}
+
+.feedback-message {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #8b5cf6;
+  border-radius: 10px;
+  color: #ddd6fe;
+  background: rgba(124, 58, 237, 0.12);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.development-note {
+  margin-top: 22px;
+  color: #9ca3af;
+  font-size: 12px;
+  text-align: center;
+}
+
+/* ADAPTACIÓN DE FORMULARIOS A MÓVILES */
+@media (max-width: 650px) {
+  .form-section {
+    padding: 25px 16px 45px;
+  }
+
+  .form-card {
+    padding: 24px 20px;
+  }
+
+  .form-card h1 {
+    font-size: 25px;
+  }
+}

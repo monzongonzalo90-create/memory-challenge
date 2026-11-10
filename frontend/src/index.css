@@ -1,0 +1,96 @@
+
+/* =========================================
+   MEMORY CHALLENGE - ESTILOS GLOBALES
+   ========================================= */
+
+/* 1. Variables generales del proyecto */
+:root {
+  font-family: 'Segoe UI', Arial, sans-serif;
+
+  color: #F9FAFB;
+  background: #111827;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --color-primary: #7C3AED;
+  --color-secondary: #2563EB;
+  --color-background: #111827;
+  --color-surface: #1F2937;
+  --color-text: #F9FAFB;
+  --color-muted: #9CA3AF;
+  --color-border: #374151;
+  --color-success: #22C55E;
+  --color-danger: #EF4444;
+
+  --radius: 14px;
+}
+
+/* 2. Reinicio de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 3. Configuración del documento */
+html {
+  min-width: 320px;
+  min-height: 100%;
+  scroll-behavior: smooth;
+}
+
+/* 4. Cuerpo de la aplicación */
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  background: var(--color-background);
+  color: var(--color-text);
+}
+
+/* 5. Contenedor principal de React */
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* 6. Tipografía general */
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+p {
+  line-height: 1.6;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+/* 7. Imágenes */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* 8. Enlaces */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* 9. Adaptación a dispositivos móviles */
+@media (max-width: 768px) {
+  :root {
+    font-size: 15px;
+  }
+}
